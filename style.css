@@ -1,5 +1,6 @@
 *{margin: 0;padding: 0}
 
+/*start background design*/
 body {
     background: url(images/bg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -7,3 +8,72 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+#overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width:      100%;
+    height:     100%;
+    z-index:    10;
+    top:        0;
+    left:       0;
+    position:   fixed;
+}
+/*End background design*/
+
+/* start image design */
+.imgPosition {
+    min-height: 17em;
+    position: relative;
+}
+.imgControll {
+    border-radius: 0 0 50% 50%;
+    height: 10em;
+    left: 50%;
+    margin-left: -73px;
+    position: absolute;
+    top: 31%;
+    width: 10em;
+}
+/* end image design */
+
+/*start informations design*/
+.informations h2 {
+    color: white;
+    font-size: 37px;
+    font-weight: bold;
+    margin-top: -0.4em;
+}
+.informations h3{
+    color: #077495;
+}
+.informations p{
+    color: #999999;
+}
+.quotation {
+    font-size: 28px;
+    margin: -10px 0 -1px;
+}
+.speciality{
+    font-size: 16px;
+}
+/*end informations design*/
+
+/*start social profiles*/
+.socialProfiles i{
+    background-color: white;
+    border-radius: 50%;
+    color: #077495;
+    font-size: 34px;
+    height: 50px;
+    margin-left: 7px;
+    padding: 7px;
+    width: 50px;
+    cursor: pointer;
+    transition: background 0.2s ease 0s, color 0.2s ease 0s;
+    position: relative;
+}
+.socialProfiles i:hover {
+    background-color: #077495;
+    color: white;
+    transition: background 0.2s ease 0s, color 0.2s ease 0s;
+}
+/*end social profiles*/
