@@ -10,37 +10,26 @@
 /*Mobile Layout:320px*/
 
 @media only screen and (max-width: 767px) {
-    *{
-        overflow: scroll;
-        -webkit-overflow-scrolling: touch;
+    body {
+        background-color: #000;
+        overflow-y: scroll;
     }
-
     .socialProfiles i {
         font-size: 23px;
         height: 40px;
         margin-left: 5px;
         width: 40px;
     }
-    body {
-        background-color: #000;
-    }
-    #overlay {
-        display: none;
-    }
+
 
 }
 /*Width Mobile Layout:480px*/
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-    *{
-        overflow: scroll;
-        -webkit-overflow-scrolling: touch;
-    }
+
     body {
         background-color: #000;
-    }
-    #overlay {
-        display: none;
+        overflow-y: scroll;
     }
     .socialProfiles i {
         font-size: 23px;
