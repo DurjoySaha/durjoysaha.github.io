@@ -1,5 +1,7 @@
 *{margin: 0;padding: 0}
-
+a {
+    outline: 0;
+}
 /*start background design*/
 body {
     background: url(images/bg.jpg) no-repeat center center fixed;
@@ -54,6 +56,10 @@ body {
 }
 .speciality{
     font-size: 16px;
+}
+.or > h2 {
+    color: white;
+    font-weight: bold;
 }
 /*end informations design*/
 
