@@ -60,12 +60,13 @@ body {
 .or > h2 {
     color: white;
     font-weight: bold;
+    margin-top: 9px;
 }
 /*end informations design*/
 
 /*start social profiles*/
 .socialProfiles i{
-    background-color: white;
+    background-color: #d0d3d4 ;
     border-radius: 50%;
     color: #077495;
     font-size: 34px;
