@@ -14,10 +14,7 @@
         overflow: scroll;
         -webkit-overflow-scrolling: touch;
     }
-    #overlay {
-        position: unset;
-        height: 100%;
-    }
+
     .socialProfiles i {
         font-size: 23px;
         height: 40px;
@@ -25,8 +22,12 @@
         width: 40px;
     }
     body {
-        background-color: #ccc;
+        background-color: #000;
     }
+    #overlay {
+        display: none;
+    }
+
 }
 /*Width Mobile Layout:480px*/
 
@@ -35,8 +36,11 @@
         overflow: scroll;
         -webkit-overflow-scrolling: touch;
     }
+    body {
+        background-color: #000;
+    }
     #overlay {
-        position: unset;
+        display: none;
     }
     .socialProfiles i {
         font-size: 23px;
