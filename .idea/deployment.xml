@@ -2,7 +2,7 @@
 <project version="4">
   <component name="PublishConfigData">
     <serverData>
-      <paths name="banglalink114">
+      <paths name="blink">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
