@@ -1,4 +1,4 @@
-This is a complete open source project. If you like my design you can download it and use it. I give you the full permission.
+This is a complete open source project. If you like my design you can download it and use it. I give you the full permission. But you have to inform me first.
 
 #<p align="center">Social?</p>
 <p align="center">
