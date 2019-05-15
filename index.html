@@ -1,83 +1,960 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Durjoy | Passionate Software Developer</title>
-    <!--This is for fevicon-->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <!--This is for google SEO-->
-    <meta content="Durjoy is dedicated and passionate about his work and a hard-worker. He believe that hard-working is the key to success and that is the only way.
-He want to use his skills to make the world a better place." name="description" />
-    <meta content="Freelance software developer from Bangladesh, Freelance software developer from Rangpur, PHP, Wordpress, Laravel" name="keywords" />
-    <meta name="author" content="Durjoy Kumar Saha" />
-    <meta content='Index, Follow' name='robots' />
-    <meta content='all' name='googlebot' />
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!--Main CSS-->
-    <link rel="stylesheet" href="style.css">
-    <!--Animate Css-->
-    <link rel="stylesheet" href="css/animate.css">
-    <!--Custom responsive Css-->
-    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    <!-- SEO optimization-->
+    <meta name="author" content="Durjoy Saha[durjoysaha.github.io]" />
+    <meta name="keywords" content="website design and development company in bangladesh, best web design company in bangladesh, web development company in dhaka, freelancer, professional freelancer, best website design company in bangladesh, web development company in dhaka bangladesh, bangladeshi website design company, best freelancer in dhaka, professional website development bd, bangladeshi it professional, dhaka web design"/>
+    <meta name="description" content="Best web design and development company in dhaka Bangladesh, Custom Website Design Only @ 5,000 TAKA, website design company in dhaka, website design and development Company in Dhaka, website development company bangladesh, bd web design company, website development firm in bangladesh, IT company bd, bangladeshi it firm,best it company in bangladesh, best website design company in bangladesh, professional web design company in bangladesh"/>
+    <meta name="subject" content="website design and development company in dhaka bangladesh"/>
+    <meta name="classification" content="web design and development bangladesh, web development, website design, website development"/>
+
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" >
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/font/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/libs/materialize/css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="screen,projection" />
+
+    <link rel="stylesheet" href="assets/css/animate.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="assets/libs/sweetalert/sweet-alert.css" media="screen,projection" />
+
+    <link rel="stylesheet" href="assets/libs/owl-carousel/owl.carousel.css" media="screen,projection" />
+    <link rel="stylesheet" href="assets/libs/owl-carousel/owl.transitions.css" media="screen,projection" />
+    <link rel="stylesheet" href="assets/libs/owl-carousel/owl.theme.css" media="screen,projection" />
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Choose your default colors -->
+    <link rel="stylesheet" href="assets/css/colors/color1.css">
+
 </head>
+
 <body>
-    <section id="overlay">
-        <div class="container-fluid">
+
+<!-- Preloader -->
+<div id="preloader">
+    <div class="loader">
+        <svg class="circle-loader" height="50" width="50">
+            <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="6" stroke-miterlimit="10" />
+        </svg>
+    </div>
+</div><!--preloader end-->
+
+<!-- Main Container -->
+<main id="app" class="main-section sortable-handler">
+    <!-- header navigation start -->
+    <header id="navigation" class="root-sec white nav">
+        <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="imgPosition  animated">
-                        <img src="images/profile.jpg" alt="Durjoy Saha" class="imgControll img-responsive" >
+                <div class="col-sm-12">
+                    <div class="nav-inner">
+                        <nav class="primary-nav">
+                            <div class="clearfix nav-wrapper">
+                                <a href="#home" class="left brand-logo menu-smooth-scroll" data-section="#home" id="heading-info">
+                                    <h3>Durjoy <span class="last-name">Saha</span></h3>
+                                    <p>Professional Full Stack Engineer</p>
+                                </a>
+                                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                                <ul class="inline-menu side-nav" id="mobile-demo">
+
+                                    <!-- Mini Profile // only visible in Tab and Mobile -->
+                                    <li class="mobile-profile">
+                                        <div class="profile-inner">
+                                            <div class="pp-container">
+                                                <img src="images/durjoy.png" alt="Durjoy Saha">
+                                            </div>
+                                            <h3>Durjoy saha</h3>
+                                            <h5>Professional Full Stack Engineer</h5>
+                                        </div>
+                                    </li><!-- mini profile end-->
+
+
+                                    <li><a href="#about" data-section="#about" class="menu-smooth-scroll"><i class="fa fa-user fa-fw"></i>About Me</a>
+                                    </li>
+                                    <li><a href="#skill" data-section="#skill" class="menu-smooth-scroll"><i class="fa fa-file-text fa-fw"></i>Skills</a>
+                                    </li>
+                                    <li><a href="#experience" data-section="#experience" class="menu-smooth-scroll"><i class="fa fa-briefcase fa-fw"></i>Experience</a>
+                                    </li>
+                                    <li><a href="#education" data-section="#education" class="menu-smooth-scroll"><i class="fa fa-graduation-cap fa-fw"></i>Education</a>
+                                    </li>
+                                    <li><a href="#portfolio" data-section="#portfolio" class="menu-smooth-scroll"><i class="fa fa-folder-open fa-fw"></i>Portfolio</a>
+                                    </li>
+                                    <li><a href="https://medium.com/@durjoysaha39" target="_blank"><i class="fa fa-pencil fa-fw"></i>Blog</a>
+                                    </li>
+                                    <li><a href="#contact" data-section="#contact" class="menu-smooth-scroll"><i class="fa fa-paper-plane fa-fw"></i>Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
                     </div>
                 </div>
             </div>
-            <div class="row clearfix">
-                <div class="col-md-12 text-center">
+        </div>
+        <!-- .container end -->
+    </header>
+    <!-- #header  navigation end -->
 
-                   <div class="informations">
-                       <h2>I'm Durjoy</h2>
-                       <h3>Freelancer / Full Stack Engineer / Consultant</h3>
-                       <p class="normalText">I am dedicated and passionate about my work and a hard-worker. I believe hard-working is the key to success and that is the only way.</p>
-                       <p class="quotation">"I want to use my skills to make the world a better place."</p>
-                       <p class="speciality"><strong>Specialties:</strong> c, PHP, jQuery, Ajax, problem solving, git, UI design</p>
-                   </div>
-
-                    <div class="socialProfiles">
-                        <a href="https://github.com/DurjoySaha" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        <a href="http://stackoverflow.com/users/3026897/durjoy-saha" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                        <a href="https://www.linkedin.com/in/durjoy-saha-92713272" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        <a href="https://www.facebook.com/DurjoyKumarSaha" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="https://twitter.com/DurjoySaha" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="https://www.youtube.com/c/DurjoySaha" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                    </div>
-
-                    <div class="or">
-                        <h2>OR</h2>
-                    </div>
-
-                    <div class="others">
-                        <div class="btn-group" role="group">
-                            <a type="button" href="http://www.durjoysaha.com" target="_blank" class="btn btn-success">View Details</a>
-                            <a type="button" href="http://www.durjoysaha.com/contact/"  target="_blank" class="btn btn-warning">Contact Me</a>
+    <!-- Home Section start -->
+    <section id="home" class="scroll-section root-sec grey lighten-5 home-wrap">
+        <div class="sec-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="home-inner">
+                            <div class="center-align home-content">
+                                <h1 class="home-title">Let's</h1>
+                                <h2 class="home-subtitle">Making the inaccessible, accessible</h2>
+                                <a href="#contact" class="hire-me-btn btn waves-effect waves-light btn-large brand-bg white-text regular-text">Hire Me <i class="mdi-content-send left"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <!-- .container end -->
+            <div class="section-call-to-area">
+                <div class="container">
+                    <div class="row">
+                        <a href="#about" class="btn-floating btn-large button-middle call-to-about section-call-to-btn animated btn-up btn-hidden" data-section="#about">
+                            <i class="mdi-navigation-expand-more"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- .container end -->
+            </div>
+        </div>
+    </section>
+    <!-- #home Section end -->
+
+    <!-- About Section start -->
+    <section id="about" class="scroll-section root-sec padd-tb-60 grey lighten-5 about-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="clearfix about-inner">
+
+                    <div class="col-sm-12 col-md-4">
+                        <div class="person-about">
+                            <h3 class="about-subtitle">My Story</h3>
+                            <p>Hello, I’m a full stack engineer from Dhaka, Bangladesh. I have over 3.5 years experience on software development. <br />
+                                I have completed my graduation in computer science and engineering</p>
+                            <a class="waves-effect waves-light btn-large brand-bg white-text" href="documents/Durjoy_Kumar_Saha.pdf"><i class="mdi-content-archive left"></i> Download Resume</a>
+                        </div>
+                    </div>
+                    <!-- about me description -->
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="person-img wow fadeIn">
+                            <img class="z-depth-1" src="images/durjoy.png" alt="Durjoy Saha">
+                        </div>
+                    </div>
+                    <!-- about me image -->
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="person-info">
+                            <h3 class="about-subtitle">Personal Information</h3>
+                            <h5><span>Name :</span> Durjoy Saha</h5>
+                            <h5><span>Phone :</span> +8801750671242</h5>
+                            <h5><span>Email :</span> durjoysaha39@gmail.com</h5>
+                            <h5><span>Address :</span> Dhaka, Bangladesh</h5>
+                        </div>
+
+                        <div class="about-social">
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/DurjoySaha" class="btn-floating waves-effect waves-light white" target="_blank"><i class="fa fa-github"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/durjoy-saha-92713272/" class="btn-floating waves-effect waves-light white" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://stackoverflow.com/users/3026897/durjoy-saha" class="btn-floating waves-effect waves-light white" target="_blank"><i class="fa fa-stack-overflow"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/DurjoyKumarSaha" class="btn-floating waves-effect waves-light white" target="_blank"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/DurjoySaha" class="btn-floating waves-effect waves-light white" target="_blank"><i class="fa fa-twitter"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- about me info -->
 
                 </div>
             </div>
         </div>
+        <!-- .container end -->
     </section>
-<!-- Connect to jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<!--Our JS file-->
-<script src="js/main.js"></script>
+    <!-- #about Section end -->
+
+    <!-- skill Section start -->
+    <section id="skill" class="scroll-section root-sec white skill-wrap">
+        <div class="sec-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="clearfix skill-inner">
+                        <div class="col-sm-12 col-md-3">
+                            <div class="skill-left">
+                                <h2 class="title">Skills</h2>
+                                <p class="regular-text">I am a polyglot programmer. I have versatile knowledge about software and web development.</p>
+                            </div>
+                        </div>
+
+                        <!-- skills container -->
+                        <div class="col-sm-12 col-md-6 col-md-offset-1">
+                            <div class="skill-right">
+                                <div id="skillSlider" class="clearfix skill-graph">
+
+                                    <!-- single skill -->
+                                    <div class="single-skill">
+                                        <div class="after-li">
+                                            <div class="singel-hr">
+                                                <div class="singel-hr-inner" data-height="70%">
+                                                    <div class="skill-visiable">
+                                                        <span class="skill-title">Python</span>
+                                                        <div class="hr-wrap">
+                                                            <div class="hrc"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--<span class="skill-count">60%</span>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /single skill-->
+
+                                    <!-- single skill -->
+                                    <div class="single-skill">
+                                        <div class="after-li">
+                                            <div class="singel-hr">
+                                                <div class="singel-hr-inner" data-height="65%">
+                                                    <div class="skill-visiable">
+                                                        <span class="skill-title">Django</span>
+                                                        <div class="hr-wrap">
+
+                                                            <div class="hrc"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--<span class="skill-count">85%</span>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /single skill-->
+
+                                    <!-- single skill -->
+                                    <div class="single-skill">
+                                        <div class="after-li">
+                                            <div class="singel-hr">
+                                                <div class="singel-hr-inner" data-height="40%">
+                                                    <div class="skill-visiable">
+                                                        <span class="skill-title">Odoo</span>
+                                                        <div class="hr-wrap">
+
+                                                            <div class="hrc"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--<span class="skill-count">85%</span>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /single skill-->
+
+                                    <!-- single skill -->
+                                    <div class="single-skill">
+                                        <div class="after-li">
+                                            <div class="singel-hr">
+                                                <div class="singel-hr-inner" data-height="90%">
+                                                    <div class="skill-visiable">
+                                                        <span class="skill-title">PHP</span>
+                                                        <div class="hr-wrap">
+                                                            <div class="hrc"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--<span class="skill-count">100%</span>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /single skill-->
+
+                                    <!-- single skill -->
+                                    <div class="single-skill">
+                                        <div class="after-li">
+                                            <div class="singel-hr">
+                                                <div class="singel-hr-inner" data-height="90%">
+                                                    <div class="skill-visiable">
+                                                        <span class="skill-title">Cake PHP</span>
+                                                        <div class="hr-wrap">
+                                                            <div class="hrc"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--<span class="skill-count">65%</span>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /single skill-->
+
+                                    <!-- single skill -->
+                                    <div class="single-skill">
+                                        <div class="after-li">
+                                            <div class="singel-hr">
+                                                <div class="singel-hr-inner" data-height="90%">
+                                                    <div class="skill-visiable">
+                                                        <span class="skill-title">Mysql, PostgreSQL</span>
+                                                        <div class="hr-wrap">
+                                                            <div class="hrc"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--<span class="skill-count">60%</span>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /single skill-->
+
+                                    <!-- single skill -->
+                                    <div class="single-skill">
+                                        <div class="after-li">
+                                            <div class="singel-hr">
+                                                <div class="singel-hr-inner" data-height="85%">
+                                                    <div class="skill-visiable">
+                                                        <span class="skill-title">HTML5, CSS3</span>
+                                                        <div class="hr-wrap">
+                                                            <div class="hrc"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--<span class="skill-count">35%</span>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /single skill-->
+
+                                    <!-- single skill -->
+                                    <div class="single-skill">
+                                        <div class="after-li">
+                                            <div class="singel-hr">
+                                                <div class="singel-hr-inner" data-height="80%">
+                                                    <div class="skill-visiable">
+                                                        <span class="skill-title">GIT</span>
+                                                        <div class="hr-wrap">
+
+                                                            <div class="hrc"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--<span class="skill-count">85%</span>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /single skill-->
+
+                                    <!-- single skill -->
+                                    <div class="single-skill">
+                                        <div class="after-li">
+                                            <div class="singel-hr">
+                                                <div class="singel-hr-inner" data-height="60%">
+                                                    <div class="skill-visiable">
+                                                        <span class="skill-title">Wordpress</span>
+                                                        <div class="hr-wrap">
+                                                            <div class="hrc"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--<span class="skill-count">60%</span>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /single skill-->
+
+                                    <!-- single skill -->
+                                    <div class="single-skill">
+                                        <div class="after-li">
+                                            <div class="singel-hr">
+                                                <div class="singel-hr-inner" data-height="70%">
+                                                    <div class="skill-visiable">
+                                                        <span class="skill-title">JavaScript</span>
+                                                        <div class="hr-wrap">
+
+                                                            <div class="hrc"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--<span class="skill-count">85%</span>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /single skill-->
+
+                                    <!-- single skill -->
+                                    <div class="single-skill">
+                                        <div class="after-li">
+                                            <div class="singel-hr">
+                                                <div class="singel-hr-inner" data-height="60%">
+                                                    <div class="skill-visiable">
+                                                        <span class="skill-title">Network Administration</span>
+                                                        <div class="hr-wrap">
+                                                            <div class="hrc"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--<span class="skill-count">60%</span>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /single skill-->
+
+                                    <!-- single skill -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /skills container -->
+                    </div>
+                </div>
+                <div class="btn-wrapp skl-ctrl">
+                    <a class="btn-floating waves-effect waves-light btn-large brand-bg white-text go go-left"><i class="mdi-navigation-chevron-left "></i></a>
+                    <a class="btn-floating waves-effect waves-light btn-large brand-bg white-text go go-right"><i class="mdi-navigation-chevron-right "></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- .container end -->
+    </section>
+    <!-- #skill Section end -->
+
+    <!-- experience Section start -->
+    <section id="experience" class="scroll-section root-sec padd-tb-120 brand-bg experience-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="experience-inner">
+                    <div class="col-sm-12 col-md-10 card-box-wrap">
+                        <div class="row">
+                            <div class="clearfix section-head experience-text">
+                                <div class="col-sm-12">
+                                    <h2 class="title">Experience</h2>
+                                    <p class="regular-text">From 1st February 2016, I have worked some of the reputed software company in Bangladesh. From then to now I have work on various types of large scale project.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="overflow-hidden">
+                                    <div class="row">
+                                        <div id="experienceSlider" class="clearfix card-element-wrapper">
+                                            <div class="col-sm-4 cold-xs-12 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
+                                                <div class="card">
+                                                    <div class="card-image waves-effect waves-block waves-light">
+                                                        <h2 class="left-align card-title-top">February 2019 - Present</h2>
+                                                        <div class="valign-wrapper card-img-wrap">
+                                                            <img class="activator" src="images/company/bysl.png" alt="Intelliservices">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content">
+                                                        <span class="card-title activator brand-text">Full Stack Engineer<i class="mdi-navigation-more-vert right"></i></span>
+                                                        <p><a href="https://byslglobal.com">Intelliservices</a></p>
+                                                    </div>
+                                                    <div class="card-reveal">
+                                                        <div class="rev-title-wrap">
+                                                            <span class="card-title activator brand-text">Full Stack Engineer<i class="mdi-navigation-close right"></i></span>
+                                                            <p><a href="https://byslglobal.com">Intelliservices</a></p>
+                                                        </div>
+                                                        <p class="rev-content">
+                                                            Intelliservices is a sister concern of BYSL group. Here we develop the custom ODOO module to serve our business. We also develop custom software for another company.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4 cold-xs-12 single-card-box wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration=".7s">
+                                                <div class="card">
+                                                    <div class="card-image waves-effect waves-block waves-light">
+                                                        <h2 class="left-align card-title-top">October 2018 - January 2019</h2>
+                                                        <div class="valign-wrapper card-img-wrap">
+                                                            <img class="activator" src="images/company/arena.png" alt="Arena Phone BD Ltd">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content">
+                                                        <span class="card-title activator brand-text">Software Engineer<i class="mdi-navigation-more-vert right"></i></span>
+                                                        <p><a href="https://www.arena.com.bd/" target="_blank">Arena Phone BD Ltd</a></p>
+                                                    </div>
+                                                    <div class="card-reveal">
+                                                        <div class="rev-title-wrap">
+                                                            <span class="card-title activator brand-text">Software Engineer<i class="mdi-navigation-close right"></i></span>
+                                                            <p><a href="https://www.arena.com.bd/" target="_blank">Arena Phone BD Ltd</a></p>
+                                                        </div>
+                                                        <p class="rev-content">
+                                                            Arena Phone BD LTD is a leading software development company in Bangladesh , established in 2007, ISO 9001:2015 certified software company in Bangladesh
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4 cold-xs-12 single-card-box wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration=".7s">
+                                                <div class="card">
+                                                    <div class="card-image waves-effect waves-block waves-light">
+                                                        <h2 class="left-align card-title-top">July 2016 - September 2018</h2>
+                                                        <div class="valign-wrapper card-img-wrap">
+                                                            <img class="activator" src="images/company/soft-bd.png" alt="Soft-bd Ltd">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content">
+                                                        <span class="card-title activator brand-text">Software Engineer<i class="mdi-navigation-more-vert right"></i></span>
+                                                        <p><a href="http://www.soft-bd.com/" target="_blank">SoftBD Ltd</a></p>
+                                                    </div>
+                                                    <div class="card-reveal">
+                                                        <div class="rev-title-wrap">
+                                                            <span class="card-title activator brand-text">Software Engineer<i class="mdi-navigation-close right"></i></span>
+                                                            <p><a href="http://www.soft-bd.com/" target="_blank">SoftBD Ltd</a></p>
+                                                        </div>
+                                                        <p class="rev-content">
+                                                            Soft-BD Ltd is full-service Web design, Web Development, Software Development company offering an extensive range of Internet services to businesses and organizations around the world.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4 cold-xs-12 single-card-box">
+                                                <div class="card">
+                                                    <div class="card-image waves-effect waves-block waves-light">
+                                                        <h2 class="left-align card-title-top">February 2016 - June 2016</h2>
+                                                        <div class="valign-wrapper card-img-wrap">
+                                                            <img class="activator" src="images/company/srrkit.jpeg" alt="SRRKIT">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content">
+                                                        <span class="card-title activator brand-text">Junior Software Engineer<i class="mdi-navigation-more-vert right"></i></span>
+                                                        <p><a href="http://www.srrkit.com/">SRRKIT Ltd</a></p>
+                                                    </div>
+                                                    <div class="card-reveal">
+                                                        <div class="rev-title-wrap">
+                                                            <span class="card-title activator brand-text">Junior Software Engineer<i class="mdi-navigation-close right"></i></span>
+                                                            <p><a href="http://www.srrkit.com/">SRRKIT Ltd</a></p>
+                                                        </div>
+                                                        <p class="rev-content">
+                                                            SRRKIT provide various types of custom software for the Bangladeshi company. They have very efficient POS, Education management software.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrapp exp-ctrl">
+                        <a class="btn-floating waves-effect waves-light btn-large white go go-left"><i class="mdi-navigation-chevron-left brand-text"></i></a>
+                        <a class="btn-floating waves-effect waves-light btn-large white go go-right"><i class="mdi-navigation-chevron-right brand-text"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- experience Section end -->
+
+    <!-- education Section start -->
+    <section id="education" class="scroll-section root-sec grey lighten-5 padd-tb-120 education-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="education-inner">
+                    <div class="col-sm-12 col-md-10 card-box-wrap">
+                        <div class="row">
+                            <div class="clearfix section-head education-text">
+                                <div class="col-sm-12">
+                                    <h2 class="title">education</h2>
+                                    <p class="regular-text">Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include storytelling, discussion, teaching, training, and directed research.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="overflow-hidden">
+                                    <div class="row">
+                                        <div id="educationSlider" class="clearfix card-element-wrapper">
+
+                                            <!-- single education -->
+                                            <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
+                                                <div class="card">
+                                                    <div class="card-image waves-effect waves-block waves-light">
+                                                        <h2 class="left-align card-title-top">2010 - 2013</h2>
+                                                        <div class="card-img-wrap">
+                                                            <img class="activator" src="images/education/brur.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content">
+                                                        <span class="card-title activator brand-text"> B.sc Engg. in CSE<i class="mdi-navigation-more-vert right"></i></span>
+                                                        <p><a href="https://brur.ac.bd/" target="_blank">Begum Rokeya University</a></p>
+                                                    </div>
+                                                    <!-- Reveal content-->
+                                                    <div class="card-reveal">
+                                                        <div class="rev-title-wrap">
+                                                            <span class="card-title activator brand-text">Masters of Science<i class="mdi-navigation-close right"></i></span>
+                                                            <p><a href="https://brur.ac.bd/" target="_blank">Begum Rokeya University</a></p>
+                                                        </div>
+                                                        <p class="rev-content">
+                                                            Begum Rokeya University of Rangpur, formerly Rangpur University, is a government-financed public state university in Bangladesh. It is the only general categorised university in Rangpur Division and the second public university in the region.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- single education end -->
+
+                                            <!-- single education -->
+                                            <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration=".7s">
+                                                <div class="card">
+                                                    <div class="card-image waves-effect waves-block waves-light">
+                                                        <h2 class="left-align card-title-top">2007 - 2009</h2>
+                                                        <div class="card-img-wrap">
+                                                            <img class="activator" src="images/education/college.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content">
+                                                        <span class="card-title activator brand-text">HSC<i class="mdi-navigation-more-vert right"></i></span>
+                                                        <p>Badarganj Degree College</p>
+                                                    </div>
+                                                    <div class="card-reveal">
+                                                        <div class="rev-title-wrap">
+                                                            <span class="card-title activator brand-text">Bachelor of Science<i class="mdi-navigation-close right"></i></span>
+                                                            <p>Badarganj Degree College</p>
+                                                        </div>
+                                                        <p class="rev-content">
+                                                            Badarganj Degree College is located in Badarganj, Rangpur.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- single education -->
+
+                                            <!-- single education -->
+                                            <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration=".7s">
+                                                <div class="card">
+                                                    <div class="card-image waves-effect waves-block waves-light">
+                                                        <h2 class="left-align card-title-top">2002 - 2007</h2>
+                                                        <div class="card-img-wrap">
+                                                            <img class="activator" src="images/education/high_school.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content">
+                                                        <span class="card-title activator brand-text">SSC<i class="mdi-navigation-more-vert right"></i></span>
+                                                        <p><a href="https://www.badarganjmodelmlhs.com/" target="_blank">Badarganj High School</a></p>
+                                                    </div>
+                                                    <div class="card-reveal">
+                                                        <div class="rev-title-wrap">
+                                                            <span class="card-title activator brand-text">Secondary School Certificate<i class="mdi-navigation-close right"></i></span>
+                                                            <p><a href="https://www.badarganjmodelmlhs.com/" target="_blank">Badarganj High School</a></p>
+                                                        </div>
+                                                        <p class="rev-content">
+                                                            Badarganj Model High School is located in Badarganj, Rangpur.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- single education -->
+
+                                            <!-- single education -->
+                                            <div class="col-sm-4 single-card-box">
+                                                <div class="card">
+                                                    <div class="card-image waves-effect waves-block waves-light">
+                                                        <h2 class="left-align card-title-top">1997 - 2001</h2>
+                                                        <div class="card-img-wrap">
+                                                            <img class="activator" src="images/education/primary.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content">
+                                                        <span class="card-title activator brand-text">Primary Certificate<i class="mdi-navigation-more-vert right"></i></span>
+                                                        <p><a href="https://bmgps.business.site/" target="_blank">Badarganj Primary School</a></p>
+                                                    </div>
+                                                    <div class="card-reveal">
+                                                        <div class="rev-title-wrap">
+                                                            <span class="card-title activator brand-text">Primary Certificate<i class="mdi-navigation-close right"></i></span>
+                                                            <p><a href="https://bmgps.business.site/" target="_blank">Badarganj Primary School</a></p>
+                                                        </div>
+                                                        <p class="rev-content">
+                                                            The most attractive & ancient primary school in Badarganj town. Most of the students of Municipal area come to take education in this school. The education of this school starts from Shishu Shreny.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- single education -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrapp edu-ctrl">
+                        <a class="btn-floating waves-effect waves-light btn-large brand-bg go go-left"><i class="mdi-navigation-chevron-left"></i></a>
+                        <a class="btn-floating waves-effect waves-light btn-large brand-bg go go-right"><i class="mdi-navigation-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- education Section end -->
+
+    <!-- Portfolio Section start -->
+    <section id="portfolio" class="scroll-section root-sec white portfolio-wrap">
+        <div class="padd-tb-120 brand-bg portfolio-top">
+            <div class="portfolio-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2 class="title">PORTFOLIO</h2>
+                            <ul class="inline-menu clearfix portfolio-category" id="portfolio-msnry-sort">
+                                <li class="active"><a href="#" data-target="*">All</a>
+                                </li>
+                                <li><a href="#" data-target=".category-1">Python</a>
+                                </li>
+                                <li><a href="#" data-target=".category-2">Odoo</a>
+                                </li>
+                                <li><a href="#" data-target=".category-3">PHP</a>
+                                </li>
+                                <li><a href="#" data-target=".category-4">Wordpress</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- .container end -->
+        </div>
+        <div id="portfolioModal" class="modal white">
+            <div class="model-img"></div>
+            <div class="modal-content">
+                <h2 class="title">Lorem ipsum dolor sit fugit dolore.</h2>
+                <p class="m-content">A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior.</p>
+            </div>
+
+            <div class="modal-footer">
+                <a href="#" target="_blank" class="waves-effect btn-flat brand-text modal-action">Live Demo</a>
+                <a href="#" class="waves-effect btn-flat brand-text modal-action modal-close">cancel</a>
+            </div>
+        </div>
+
+        <div class="portfolio-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul class="clearfix protfolio-item" id="protfolio-msnry">
+
+
+
+                            <!-- Single Portfolio-->
+                            <li class="category-4">
+                                <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger"  data-title="It's provide various information about premium." data-content="Here I develop some Plugin to serve customer requirement. Also develop premium calculator, enquiry window where user can check the premium bill and other information." data-demo-link="https://licbangladesh.com">
+                                    <div class="protfolio-image">
+                                        <img src="images/portfolio/lic_bangladesh.jpg" alt="portfolio">
+                                        <div class="protfolio-content waves-effect waves-block waves-light">
+                                            <div class="protfolio-content__inner">
+                                                <h2 class="p-title">LIC Bangladesh</h2>
+                                            </div>
+                                        </div>
+                                        <div class="p-overlay"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!--/ single portfolio -->
+
+                            <!-- Single Portfolio-->
+                            <li class="single-port-item category-2">
+                                <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger"  data-title="Full business automation by ODOO ERP solution." data-content="We develop the custom module for ODOO to serve our specific purpose. We develop more than fifteen ODOO module." data-demo-link="#">
+                                    <div class="protfolio-image">
+                                        <img src="images/portfolio/odoo.jpg" alt="ODOO ERP Solution">
+                                        <div class="protfolio-content waves-effect waves-block waves-light">
+                                            <div class="protfolio-content__inner">
+                                                <h2 class="p-title">ODOO Module</h2>
+                                            </div>
+                                        </div>
+                                        <div class="p-overlay"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!--/ single portfolio -->
+
+                            <!-- Single Portfolio-->
+                            <li class="single-port-item category-1">
+                                <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger"  data-title="E-commerce site based on ODOO API." data-content="We use the wagtail python framework to develop this e-commerce site. This is a complete API based website exposed from ODOO." data-demo-link="http://is.ilyn.info"> <!-- Portfolio pop-up content-->
+                                    <div class="protfolio-image">
+                                        <img src="images/portfolio/ilyn.png" alt="Illiyeen"> <!-- portfolio thumbnail-->
+                                        <div class="protfolio-content waves-effect waves-block waves-light">
+                                            <div class="protfolio-content__inner">
+                                                <h2 class="p-title">Illiyeen</h2>
+                                            </div>
+                                        </div>
+                                        <div class="p-overlay"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!--/ single portfolio -->
+                            <!-- Single Portfolio-->
+                            <li class="single-port-item category-3">
+                                <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger"  data-title="Eksheba provides various service to the people." data-content="Eksheba is one of the biggest project of Bangladesh government. It gives more than 6000 people employment. We develop this project by CakePHP framework." data-demo-link="http://eksheba.gov.bd/">
+                                    <div class="protfolio-image">
+                                        <img src="images/portfolio/eksheba.jpg" alt="Eksheba">
+                                        <div class="protfolio-content waves-effect waves-block waves-light">
+                                            <div class="protfolio-content__inner">
+                                                <h2 class="p-title">Eksheba</h2>
+                                            </div>
+                                        </div>
+                                        <div class="p-overlay"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!--/ single portfolio -->
+                            <!-- Single Portfolio-->
+                            <li class="single-port-item category-3">
+                                <a href="http://www.bmsapp.com/demo/materialx/portfolioitems.html#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#"> <!-- Portfolio pop-up content-->
+                                    <div class="protfolio-image">
+                                        <img src="images/portfolio/edc.png" alt="portfolio"> <!-- portfolio thumbnail-->
+                                        <div class="protfolio-content waves-effect waves-block waves-light">
+                                            <div class="protfolio-content__inner">
+                                                <h2 class="p-title">item name</h2>
+                                            </div>
+                                        </div>
+                                        <div class="p-overlay"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!--/ single portfolio -->
+
+                            <!-- Single Portfolio-->
+                            <li class="single-port-item category-3">
+                                <a href="http://www.bmsapp.com/demo/materialx/portfolioitems.html#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">
+                                    <div class="protfolio-image">
+                                        <img src="images/portfolio/dyd.jpg" alt="portfolio">
+                                        <div class="protfolio-content waves-effect waves-block waves-light">
+                                            <div class="protfolio-content__inner">
+                                                <h2 class="p-title">item name</h2>
+                                            </div>
+                                        </div>
+                                        <div class="p-overlay"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!--/ single portfolio -->
+
+                            <!-- Single Portfolio-->
+                            <li class="single-port-item category-3">
+                                <a href="http://www.bmsapp.com/demo/materialx/portfolioitems.html#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">
+                                    <div class="protfolio-image">
+                                        <img src="images/portfolio/dg-food.jpg" alt="portfolio">
+                                        <div class="protfolio-content waves-effect waves-block waves-light">
+                                            <div class="protfolio-content__inner">
+                                                <h2 class="p-title">item name</h2>
+                                            </div>
+                                        </div>
+                                        <div class="p-overlay"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!--/ single portfolio -->
+
+                             <!-- Single Portfolio-->
+                            <li class="single-port-item category-3">
+                                <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">
+                                    <div class="protfolio-image">
+                                        <img src="images/portfolio/eselfcare.jpg" alt="portfolio">
+                                        <div class="protfolio-content waves-effect waves-block waves-light">
+                                            <div class="protfolio-content__inner">
+                                                <h2 class="p-title">item name</h2>
+                                            </div>
+                                        </div>
+                                        <div class="p-overlay"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!--/ single portfolio -->
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- #portfolio Section end -->
+
+    <!-- Contact Section end -->
+    <section id="contact" class="scroll-section root-sec brand-bg padd-tb-120 contact-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="clearfix section-head contact-text">
+                    <div class="col-sm-12">
+                        <h2 class="title">Contact</h2>
+                        <p class="regular-text">59/2/E, Wasa Road, Maniknagar, Motijheel, Dhaka</p>
+                        <ul class="clearfix contact-info">
+                            <li><a href="">+880 1750671242</a>
+                            </li>
+                            <li><a href="">durjoysaha39@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- contact text end -->
+
+                <div class="clearfix contact-form">
+                    <div class="col-sm-12 card-box-wrap">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfHwebgwU_kSyR258cW2mRXeWpjZIm35X2dZCaFjNlOp3YvQQ/formResponse" height="600" width="100%"></iframe>
+                    </div>
+                </div>
+            </div> <!-- ./container end -->
+            <div class="section-call-to-area">
+                <div class="container">
+                    <div class="row">
+                        <a href="#home" class="btn-floating btn-large button-middle call-to-home section-call-to-btn animated btn-up btn-hidden" data-section="#home">
+                            <i class="mdi-navigation-expand-less"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- #contact Section end -->
+
+    <!-- Footer Section end -->
+    <footer id="footer" class="root-sec white root-sec footer-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="clearfix footer-inner">
+                        <p class="center">Durjoy Saha &copy; All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- ./container end-->
+    </footer>
+    <!-- #footer end -->
+
+</main>
+<!-- Main Container end-->
+<style>
+    .sortable-handler {
+        touch-action: none;
+    }
+</style>
+
+<!-- JavaScripts -->
+<script data-cfasync="false" src="assets/js/email-decode.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.easing.1.3.js"></script>
+<script src="assets/js/detectmobilebrowser.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/waypoints.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/jquery.nicescroll.min.js"></script>
+<script src="assets/libs/owl-carousel/owl.carousel.min.js"></script>
+<script src="assets/libs/materialize/js/materialize.min.js"></script>
+<script src="assets/libs/jwplayer/jwplayer.js"></script>
+<script src="assets/libs/sweetalert/sweet-alert.min.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
+
+
+<!-- Thanks to www.bmsapp.com/demo/materialx/  -->
 </html>
