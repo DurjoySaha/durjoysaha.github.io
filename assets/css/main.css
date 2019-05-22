@@ -134,7 +134,7 @@ h1,
 h2,
 h3,
 a {
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
 }
 
 a {
@@ -154,13 +154,15 @@ p {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #fff;
     font-weight: 400;
-    background-color: #fafafa;
 }
 
+h1, h2, h3, h4, h5, h6, button, label, a{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
 #preloader {
   background: none repeat scroll 0 0 #fff;
   display: block;
@@ -580,7 +582,8 @@ header.nav.hide-menu {
  ----------------------------------- */
 
 #home {
-    background: url('../../images/home-bg.jpg') no-repeat fixed center center / cover;
+    /*background: url('../../images/home-bg.jpg') no-repeat fixed center center / cover;*/
+    background-color: #000;
 }
 
 #home .sec-overlay {
@@ -745,7 +748,7 @@ header.nav.hide-menu {
 .skill-graph .single-skill {
     /*float: left;*/
     height: 490px;
-    width: 60px;
+    width: 50px;
     position: relative;
 }
 
@@ -781,7 +784,7 @@ header.nav.hide-menu {
 }
 
 .skill-title {
-    top: -100px;
+    top: -110px;
 }
 .skill-count {
     bottom: 0;
@@ -1884,12 +1887,11 @@ span.num {
 
 /* Add your CSS below */
 #heading-info{
-    color: #875a7b;
+    color: #000;
     height: 80px;
     text-align: right;
-    padding: 0.3em 2em;
+    /*padding: 0.3em 2em;*/
     font-size: 26px;
-
 }
 #heading-info .last-name {
     font-weight: 700;

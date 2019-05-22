@@ -1,3 +1,19 @@
+/* button effect */
+.btn:hover, .btn-large:hover{
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+}
+.side-nav li a{
+    color: #000;
+}
+.brand-logo h2 {
+    margin-top: 7px;
+}
+.brand-logo h3 {
+    font-size: 18px;
+}
+
 .card p a{
     color: #000;
 }
