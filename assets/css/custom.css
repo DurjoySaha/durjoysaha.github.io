@@ -18,11 +18,21 @@
     color: #000;
 }
 .card p a:hover{
-   color: #875a7b
+    color: #875a7b
 }
 
 .footer-wrap p{
     color: #000;
+}
+
+.contact-info li {
+    float: none;
+    display: inline;
+    border-right: 0;
+}
+.contact-text h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 /*
     scrollbar
