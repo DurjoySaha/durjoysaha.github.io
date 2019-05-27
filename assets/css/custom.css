@@ -24,7 +24,19 @@
 .footer-wrap p{
     color: #000;
 }
-
+.contact-info{
+    /*padding-bottom: 100px;*/
+}
+.portfolio-top .title.help-text {
+    margin-bottom: 10px;
+}
+.portfolio-top p{
+    margin-bottom: 30px;
+}
+.footer-inner p.center {
+    font-size: 14px;
+    margin-top: 1rem;
+}
 .contact-info li {
     float: none;
     display: inline;
@@ -34,6 +46,33 @@
     font-size: 25px;
     margin-bottom: 10px;
 }
+/* experience section */
+
+.experience-external-link{
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #ddd;
+    width: 100%;
+}
+.experience-external-link p{
+    padding: 5px;
+    text-align: center;
+}
+.experience-external-link a{
+    background: #000;
+    color: #fff !important;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: block;
+    vertical-align: center !important;
+    margin: 0 auto;
+}
+.experience-external-link p a i {
+    margin-top: 13px;
+    margin-left: 2px;
+}
+
 /*
     scrollbar
     width

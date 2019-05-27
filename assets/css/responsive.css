@@ -442,6 +442,10 @@ TOC :
         padding: 0;
     }
 
+    .contact-info{
+        margin-top: 50px;
+    }
+
 }
 
 @media only screen and (max-width: 359px) {
