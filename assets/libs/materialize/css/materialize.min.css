@@ -5426,7 +5426,7 @@ small {
   @media only screen and (min-width : 993px) {
     #toast-container {
       min-width: 8%;
-      top: 10%;
+      top: 20%;
       right: 7%; } }
 
 .toast {
@@ -7308,7 +7308,7 @@ ul.side-nav .collapsible-body li.active, ul.side-nav.fixed .collapsible-body li.
 
 @media (min-height: 35.875em) {
   .picker--opened .picker__frame {
-    top: 10%;
+    top: 20%;
     bottom: 20% auto; }
  }
 
@@ -7327,7 +7327,7 @@ ul.side-nav .collapsible-body li.active, ul.side-nav.fixed .collapsible-body li.
 
 @media (min-height: 38.875em) {
   .picker--opened .picker__frame {
-    top: 10%;
+    top: 20%;
     bottom: auto; }
  }
 

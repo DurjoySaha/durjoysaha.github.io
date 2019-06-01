@@ -1,3 +1,26 @@
+/* General fixing */
+a:hover{
+    text-decoration: none;
+}
+.modal{
+    bottom: inherit;
+}
+.modal-content {
+    box-shadow: none;
+    border-radius: 0;
+    border: 0;
+}
+.modal-footer{
+    border-top: 0;
+    text-align: left;
+}
+.modal .modal-content {
+    padding: 20px 20px 30px;
+}
+body.modal-open {
+    overflow: hidden;
+    position: fixed;
+}
 /* button effect */
 .btn:hover, .btn-large:hover{
     border: 1px solid #000;
@@ -24,9 +47,7 @@
 .footer-wrap p{
     color: #000;
 }
-.contact-info{
-    /*padding-bottom: 100px;*/
-}
+
 .portfolio-top .title.help-text {
     margin-bottom: 10px;
 }
@@ -36,6 +57,11 @@
 .footer-inner p.center {
     font-size: 14px;
     margin-top: 1rem;
+}
+.protfolio-content__inner p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #3cabe1;
 }
 .contact-info li {
     float: none;
@@ -47,7 +73,9 @@
     margin-bottom: 10px;
 }
 /* experience section */
-
+span.card-title.activator.brand-text {
+    font-size: 18px;
+}
 .experience-external-link{
     position: absolute;
     bottom: 0;
@@ -97,4 +125,21 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #000;
+}
+#particles-js{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.container.container-position-desktop {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+a.hire-me-btn.btn.waves-effect.waves-light.btn-large.brand-bg-black.regular-text {
+    padding-top: 0;
 }
