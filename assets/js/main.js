@@ -392,7 +392,8 @@ $(document).ready(function($){
 						if ( prev_section_index < 0 ) {
 							active_section = active_section;
 						} else {
-							active_section = sections.eq(prev_section_index);
+							active_section = active_section;
+							// active_section = sections.eq(prev_section_index);
 						}
 					}
 
@@ -697,85 +698,4 @@ $(window).load(function(){
 		offset: 200,
 		mobile: false
 	}).init();
-});
-
-
-
-
-
-/*=========== count up statistic ==========*/
-
-var $countNumb = $('.countNumb');
-
-if ( $countNumb.length > 0 ) {
-	$countNumb.counterUp({
-		delay: 15,
-		time: 1700
-	});
-}
-
-
-
-$('#contactForm').on('submit', function(e){
-	e.preventDefault();
-	var $this = $(this),
-		data = $(this).serialize(),
-		name = $this.find('#contact_name'),
-		email = $this.find('#email'),
-		message = $this.find('#textarea1'),
-		loader = $this.find('.form-loader-area'),
-		submitBtn = $this.find('button, input[type="submit"]');
-
-	loader.show();
-	submitBtn.attr('disabled', 'disabled');
-
-	function success(response) {
-		swal("Thanks!", "Your message has been sent successfully!", "success");
-		$this.find("input, textarea").val("");
-	}
-
-	function error(response) {
-		$this.find('input.invalid, textarea.invalid').removeClass('invalid');
-		if ( response.name ) {
-			name.removeClass('valid').addClass('invalid');
-		}
-
-		if ( response.email ) {
-			email.removeClass('valid').addClass('invalid');
-		}
-
-		if ( response.message ) {
-			message.removeClass('valid').addClass('invalid');
-		}
-	}
-
-	$.ajax({
-		type: "POST",
-		url: "inc/sendEmail.php",
-		data: data
-	}).done(function(res){
-
-		var response = JSON.parse(res);
-
-		if ( response.OK ) {
-			success(response);
-		} else {
-			error(response);
-		}
-
-
-		var hand = setTimeout(function(){
-			loader.hide();
-			submitBtn.removeAttr('disabled');
-			clearTimeout(hand);
-		}, 1000);
-
-	}).fail(function(){
-		sweetAlert("Oops...", "Something went wrong, Try again later!", "error");
-		var hand = setTimeout(function(){
-			loader.hide();
-			submitBtn.removeAttr('disabled');
-			clearTimeout(hand);
-		}, 1000);
-	});
 });

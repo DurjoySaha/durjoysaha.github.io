@@ -101,55 +101,7 @@ span.card-title.activator.brand-text {
     margin-left: 2px;
 }
 
-/* service offer */
-.service-offer-inner{
-    color: #000;
-}
-.all-content-wraper{
-    width:100%;
-}
-p.offer-content-description {
-    font-size: 16px;
-}
-h3.offer-content-title {
-    font-size: 19px;
-    font-weight: 600;
-    margin-bottom: 0.5em;
-}
-.offer-content {
-    padding: 1em 1em 1em 0;
-}
-.all-content-wraper::after,.all-content-wraper::before{
-    content: "";
-    display: block;
-}
-.content-item{
-    width: calc(100% / 3);
-    min-height: 350px;
-    float: left;
-    position: relative;
-}
-@media only screen and (max-width:1024px){
-    .content-item{
-        width: calc(100% /3);
-    }
-}
-@media only screen and (max-width:840px){
-    .content-item{
-        width: calc(100% /3);
-    }
-}
-@media only screen and (max-width:640px){
-    .content-item{
-        width: calc(100% /2);
-    }
-}
-@media only screen and (max-width:400px){
-    .content-item{
-        width:100%;
-   }
 
-}
 /*
     scrollbar
     width

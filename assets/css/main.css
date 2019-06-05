@@ -584,6 +584,7 @@ header.nav.hide-menu {
 #home {
     /*background: url('../../images/home-bg.jpg') no-repeat fixed center center / cover;*/
     background-color: #000;
+    height: calc(100vh - 5px);
 }
 
 #home .sec-overlay {
@@ -1899,3 +1900,78 @@ span.num {
 #heading-info .last-name {
     font-weight: 700;
 }
+
+
+
+/* service offer */
+#service-offer {
+    /*background: url(../../images/bg-offers.jpg) no-repeat scroll center center / cover;*/
+    background: linear-gradient(0deg,rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.3)), url(../../images/bg-offers.jpg) no-repeat scroll center center / cover
+}
+.service-offer-inner{
+    color: #000;
+}
+.all-content-wraper {
+    width: 100%;
+    box-shadow: 0 3px 15px rgba(0,0,0,.03);
+}
+p.offer-content-description {
+    font-size: 14px;
+    line-height: 24px;
+}
+h3.offer-content-title {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.all-content-wraper::after,.all-content-wraper::before{
+    content: "";
+    display: block;
+}
+.cls-border-all{
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.service-offer-inner hr{
+    border-top: 1px solid #000;
+}
+.testimonial-text .title{
+    margin-bottom: 55px;
+}
+.content-item{
+    padding-bottom: 1em;
+}
+.single-content:hover .offer-image {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+@media only screen and (max-width:1024px){
+
+}
+@media only screen and (max-width:840px){
+    .cls-border-all{
+        border-right: 0;
+        border-left: 0;
+    }
+    .cls-border-left:before{
+
+    }
+}
+@media only screen and (max-width:640px){
+
+    .cls-border-left{
+        border-left: 0;
+    }
+}
+@media only screen and (max-width:400px){
+
+    .cls-border-left{
+        border-left: 0;
+    }
+}
+
