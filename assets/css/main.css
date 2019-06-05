@@ -1967,11 +1967,19 @@ h3.offer-content-title {
     .cls-border-left{
         border-left: 0;
     }
+    #home {
+        /*background: url('../../images/home-bg.jpg') no-repeat fixed center center / cover;*/
+        height: calc(100vh - 100px);
+    }
 }
 @media only screen and (max-width:400px){
 
     .cls-border-left{
         border-left: 0;
+    }
+    #home {
+        /*background: url('../../images/home-bg.jpg') no-repeat fixed center center / cover;*/
+        height: calc(100vh - 100px);
     }
 }
 
